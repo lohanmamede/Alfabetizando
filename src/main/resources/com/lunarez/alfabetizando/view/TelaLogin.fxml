@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" minHeight="650.0" minWidth="1000.0" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #993399;" stylesheets="@EstiloGeral.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lunarez.alfabetizando.controller.TelaLoginController">
+   <children>
+      <GridPane layoutX="-29.0" layoutY="62.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" percentHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutX="90.0" layoutY="177.0" mnemonicParsing="false" onAction="#acionarBotaoLogarComEludika" prefHeight="30.0" style="-fx-background-radius: 5; -fx-background-color: orange; -fx-text-fill: black;" text="Logar com o Eludika" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+                  <Button defaultButton="true" layoutX="50.0" layoutY="96.0" mnemonicParsing="false" onAction="#acionarBotaoEntrar" prefHeight="30.0" style="-fx-background-radius: 5;" text="Entrar" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="110.0" />
+                  <TextField fx:id="textFieldNome" alignment="CENTER" layoutX="81.0" layoutY="28.0" prefHeight="30.0" promptText="Usuário" style="-fx-background-radius: 5;" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0" />
+                  <PasswordField fx:id="passwordFieldSenha" alignment="CENTER" layoutX="50.0" layoutY="63.0" prefHeight="30.0" promptText="Senha" style="-fx-background-radius: 5;" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="60.0" />
+                  <Button layoutX="114.0" layoutY="128.0" mnemonicParsing="false" onAction="#acionarBotaoCriarUsuario" prefHeight="30.0" style="-fx-background-radius: 5;" text="Criar novo usuário" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="150.0" />
+                  <Separator layoutX="18.0" layoutY="194.0" prefHeight="0.0" prefWidth="298.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="150.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <image>
+                  <Image url="@../images/alfabetizando-logo.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets bottom="10.0" />
+               </GridPane.margin>
+            </ImageView>
+            <Label fx:id="labelInformativa" alignment="CENTER" contentDisplay="CENTER" maxWidth="5000.0" prefHeight="30.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+            </Label>
+            <ProgressIndicator fx:id="progresso" maxHeight="100.0" maxWidth="100.0" prefHeight="50.0" prefWidth="50.0" style="-fx-opacity: 0;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+            </ProgressIndicator>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

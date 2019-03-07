@@ -1,0 +1,248 @@
+/* FOLHA DE ESTILO PRINCIPAL */
+
+/* Metro style Push Button
+ * Author: Pedro Duque Vieira (Personalizado por Lohan e Larissa)
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/ */
+
+
+/* ------------------------------------------------------------------- BOTÕES */
+/* Define estilos padrões de um botão */
+.button, button:default {
+    
+    -fx-background-color: #212121; /* (Cinza escuro) */
+    -fx-text-fill: #d8d8d8; /* (Cinza claro) */
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    -fx-background-radius: 0;
+}
+
+/* Define estilos dos botões transparentes */
+.buttonTransparent {
+    
+    -fx-background-color: transparent;
+}
+
+/* Define estilos para quando o mouse passa por cima do botão */
+.button:hover {
+    
+    -fx-background-color: #333333;
+}
+
+/* Define estilos para quando o botão está focado */
+.button:focused {
+    
+  -fx-background-color: #0093af;
+  -fx-text-fill: #1d1d1d;
+}
+
+/* Define estilos para quando o botão está pressionado */
+.button:pressed, .button:default:hover:pressed {
+    
+  -fx-border-color: #d8d8d8;
+  -fx-border-width: 1;
+  -fx-text-fill: #1d1d1d;
+}
+
+/* Define estilos para quando o botão está desabilitado */
+.button:disabled, .button:default:disabled {
+    
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+}
+
+/* Define estilos para o botão padrão 
+.button:default {
+    
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+} */
+
+/* Define estilos para quando o mouse passa por cima do botão padrão */
+.button:default:hover {
+    
+    -fx-background-color: derive(-fx-focus-color,30%);
+}
+
+/* Define estilos para botões "positivos" como de cadastro, sim, etc */
+.buttonPositivo {
+    
+    -fx-text-fill: #5cae4d;
+}
+
+/* Define estilo específico para o botão de início */
+#buttonInicio {
+    
+    -fx-graphic: url('../images/inicio.png');
+}
+
+/* Define estilo específico para o botão de perfil */
+#buttonPerfil {
+    
+    -fx-graphic: url('../images/perfil.png');
+}
+
+/* Define estilo específico para o botão de jogos */
+#buttonJogos {
+    
+    -fx-graphic: url('../images/jogos.png');
+}
+
+/* Define estilo específico para o botão de turmas */
+#buttonTurmas {
+    
+    -fx-graphic: url('../images/turmas.png');
+}
+
+/* Define estilos específico para o botão de conquistas */
+#buttonConquistas {
+    
+    -fx-graphic: url('../images/conquistas.png');
+}
+
+/* Define estilo específico para o botão de voltar */
+#buttonVoltar {
+    
+    -fx-graphic: url('../images/voltar.png');
+}
+
+/* Define estilo específico para o botão de avançar */
+#buttonAvancar {
+    
+    -fx-graphic: url('../images/avancar.png');
+}
+
+/* Define estilo específico para o botão de notificações */
+#buttonNotificacoes {
+    
+    -fx-graphic: url('../images/notification.png');
+}
+
+/* Define estilo específico para o botão de configurações */
+#buttonConfiguracoes {
+    
+    -fx-graphic: url('../images/options.png');
+}
+
+/* Define estilos específico para o botão de deslogar */
+#buttonDeslogar {
+    
+    -fx-graphic: url('../images/sign-out.png');
+}
+
+/* Define estilos para quando o mouse está em cima dos botões da barra de ferramentas */
+#buttonVoltar:hover, #buttonAvancar:hover, #buttonNotificacoes:hover,
+#buttonConfiguracoes:hover, #buttonDeslogar:hover{
+    
+    -fx-background-color: gray;
+}
+
+/* Define estilos para um dos botões da barra de ferramentas está pressionado */
+#buttonVoltar:pressed, #buttonAvancar:pressed, #buttonNotificacoes:pressed,
+#buttonConfiguracoes:pressed, #buttonDeslogar:pressed{
+    
+    -fx-background-color: #0093af; /* Tom de azul */
+}
+
+
+
+/* Define estilos padrões de um textField */
+.text-field {
+    
+    -fx-background-radius: 0;
+}
+
+/* Define estilos padrões de um choiceBox */
+.choice-box {
+    
+    -fx-background-radius: 0;
+}
+
+/* Define estilos padrões de um datePicker */
+.date-picker {
+    
+    -fx-background-radius: 0;
+}
+
+/* Imagem que aparece na página de Perfil */
+#imagemPerfil {
+    
+    -fx-background-image: url('../images/avatar-anciao.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 150px 150px;
+}
+
+/* Define estilos para a imagem de perfil na tela principal */
+#imagemDePerfilTelaPrincipal {
+    
+    -fx-background-image: url('../images/avatar-anciao.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 32px 32px;
+}
+
+/* Define estilos para o nome do perfil na tela principal */
+#nomeDePerfilTelaPrincipal {
+    
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: #d8d8d8; /* (Cinza claro) */
+}
+
+/* Define a imagem de fundo de determinados elementos*/
+.fundoImagem1 {
+    
+    -fx-background-image: url('../images/padrao-laranja.png');
+}
+
+/* Define a imagem de fundo de determinados elementos*/
+.fundoImagem2 {
+
+    -fx-background-image: url('../images/padrao-azul.jpg');
+    -fx-background-position: center;
+    -fx-border-radius: 30;
+
+}
+
+/* Define a cor de fundo de determinados elementos*/
+.fundoCor1 {
+    
+    -fx-background-color: #212121; /* (Cinza escuro) */
+}
+
+/* Altera a cor de fundo de determinados elementos*/
+.fundoCor2 {
+    
+    -fx-background-color: #993399; /* (Cinza) */
+}
+
+/* Define a cor de fundo de determinados elementos*/
+.fundoCor1 {
+    
+    -fx-background-color: #212121; /* (Cinza escuro) */
+}
+
+/* Altera a cor de fundo de determinados elementos*/
+.fundoCor3 {
+    
+    -fx-background-color: white;
+}
+
+/* Define se determinados elementos da tela principal terão bordas ou não */
+.bordasTelaPrincipal {
+    
+    -fx-background-radius: 0;
+}
+
+/* ------------------ */
+.fontePadrao {
+    
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 18px;
+}
+
+
+
+
